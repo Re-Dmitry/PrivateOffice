@@ -1,13 +1,13 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import { Route, Switch } from "react-router-dom";
-import ItemsList from "./ItemsList";
-import ProductsList from "./ProductsList";
+import ItemsList from "./Main/ItemsList";
+import ProductsPage from "./Products/ProductsPage";
 
-const Routes: React.FC = (props: PropsWithChildren<{}>) => {
+const Routes: React.FC = (props) => {
 	return (
 		<Switch>
 			<Route component={ItemsList} path="/" exact />
-			<Route component={ProductsList} path="/products" />
+			<Route component={ProductsPage} path="/products" />
 		</Switch>
 	)
 }
