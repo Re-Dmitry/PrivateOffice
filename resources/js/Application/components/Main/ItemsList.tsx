@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 	},
 }));
 
-export default function ItemList() {
+export default function ItemsList() {
 	const classes = useStyles();
 	const [value, setValue] = React.useState(0);
 
