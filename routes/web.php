@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/{query}', function () {
     return view('app');
-})->where('query', '^((?!api).)*$');
+})->where('query', '^((?!api|iatu|nova-api).)*$');
+

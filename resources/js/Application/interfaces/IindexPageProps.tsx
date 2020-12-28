@@ -1,5 +1,5 @@
 interface IindexPageProps {
-	open: boolean,
+    open: boolean,
 }
 
 export default IindexPageProps;

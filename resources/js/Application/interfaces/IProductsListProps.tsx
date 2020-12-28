@@ -1,5 +1,7 @@
 interface IProductsListProps {
-	products: any[],
+    products: any[],
+    setProductsInCart: any
 }
 
 export default IProductsListProps;
+
